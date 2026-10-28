@@ -74,7 +74,6 @@
         <a class="brand" href="#dashboard">${icon.mark}<span>${esc(D.APP_NAME)}</span></a>
         <nav class="nav" aria-label="Main">
           ${NAV.map(([r, l]) => `<a href="#${r}" class="${key === r ? 'on' : ''}" ${key === r ? 'aria-current="page"' : ''}>${l}</a>`).join('')}
-          ${D.user.role === 'admin' ? `<a href="#admin-users" class="${admin ? 'on' : ''}">Admin</a>` : ''}
         </nav>
         <div class="top-right">
           <span class="clock"><span class="dot ${S.killed ? 'bad' : ''}"></span><span data-live="clock">${LIVE.clock()}</span></span>
@@ -89,7 +88,6 @@
               <a href="#my-versions" role="menuitem">My strategy versions</a>
               <a href="#go-live" role="menuitem">Go live checklist</a>
               <a href="#plans" role="menuitem">Plan</a>
-              <a href="#admin-users" role="menuitem">Admin</a>
               <button type="button" data-act="signout" role="menuitem">Sign out</button>
             </div>` : ''}
           </div>

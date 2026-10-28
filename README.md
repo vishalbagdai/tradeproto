@@ -18,3 +18,4 @@ Admin: `#admin-users`, `#admin-invites`, `#admin-strategies`, `#admin-review`, `
 
 Everything resets on reload except the chosen theme and collapsed sections.
 When the real Blazor app is built, each page function maps to one Razor component in the shared RCL.
+Admin section removed
